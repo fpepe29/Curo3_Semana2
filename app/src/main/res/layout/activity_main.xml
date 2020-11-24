@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvSiguiente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_style"
+            android:fontFamily="@font/kaushanscript"
+            android:gravity="center"
+            android:text="@string/boton_siguiente"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/titulo_1"
+            android:textStyle="bold"
+            android:layout_gravity="bottom|center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_style"
+            >
+
+            <ImageView
+                android:id="@+id/ivRetroceder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menor_que"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/agenda"
+                android:layout_gravity="center"
+
+                />
+
+            <TextView
+                android:id="@+id/tvScreen1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo1"
+                android:fontFamily="@font/kaushanscript"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/titulo_1"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/ivMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/menu"
+                android:layout_marginLeft="90dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center_horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >>
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tietNombre_completo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="15"
+                    android:inputType="textPersonName"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:hint="@string/campo1" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tietFecha_nacimiento"
+                    android:layout_width="324dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="@string/campo2"
+                    android:inputType="date"
+                    android:maxLines="1">
+
+                </android.support.design.widget.TextInputEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tietTelefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="200dp"
+                    android:ems="15"
+                    android:inputType="phone"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:hint="@string/campo3"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <android.support.design.widget.TextInputEditText
+                   android:id="@+id/tietEmail"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:ems="15"
+                   android:inputType="textPersonName"
+                   android:maxLength="40"
+                   android:singleLine="true"
+                   android:hint="@string/campo4"/>
+
+           </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tietDescripcion_contacto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="15"
+                    android:inputType="textPersonName"
+                    android:maxLength="40"
+                    android:maxLines="2"
+                    android:hint="@string/campo5"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

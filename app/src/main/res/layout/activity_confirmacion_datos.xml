@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmacionDatos">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fontFamily="@font/kaushanscript">
+
+        <TextView
+            android:id="@+id/tvEditarDatos"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="370dp"
+            android:background="@drawable/border_style"
+            android:fontFamily="@font/kaushanscript"
+            android:gravity="center"
+            android:text="@string/editar_datos"
+            android:textColor="@color/colorBlack"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_style">
+
+            <ImageView
+                android:id="@+id/ivRetroceder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menor_que"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/agenda"
+
+                />
+
+            <TextView
+                android:id="@+id/tvScreen1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo1"
+                android:fontFamily="@font/kaushanscript"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/titulo_1"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/ivMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/menu"
+                android:layout_marginLeft="90sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="35dp"
+             >
+
+            <TextView
+                android:id="@+id/tvNombre_completo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="@dimen/campos"
+                android:fontFamily="@font/kaushanscript"
+                android:textColor="@color/colorBlack"
+                />
+            <TextView
+                android:id="@+id/tvFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="@dimen/campos"
+                android:fontFamily="@font/kaushanscript"
+                android:textColor="@color/colorBlack"
+                />
+            <TextView
+                android:id="@+id/tvTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="@dimen/campos"
+                android:fontFamily="@font/kaushanscript"
+                android:textColor="@color/colorBlack"
+               />
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="@dimen/campos"
+                android:fontFamily="@font/kaushanscript"
+                android:textColor="@color/colorBlack"
+                />
+            <TextView
+                android:id="@+id/tvDescripcion_contacto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="@dimen/campos"
+                android:fontFamily="@font/kaushanscript"
+                android:textColor="@color/colorBlack"
+               />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvConfirmar"
+            android:layout_marginTop="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/confirmar_datos"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/kaushanscript"
+            android:textSize="@dimen/titulo_1"
+            android:textStyle="bold"/>
+
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

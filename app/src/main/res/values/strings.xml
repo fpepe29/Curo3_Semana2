@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Curso3Semana2</string>
+    <string name="boton_siguiente">Siguiente</string>
+    <string name="titulo1">Añadir contacto</string>
+    <string name="campo1">Nombre completo</string>
+    <string name="campo2">Fecha Nacimiento</string>
+    <string name="campo3">Teléfono</string>
+    <string name="campo4">Email</string>
+    <string name="campo5">Descripción Contacto</string>
+    <string name="editar_datos">Editar datos</string>
+    <string name="confirmar_datos">Confirmar Datos</string>
+    <string name="aviso">Debes introducir al menos el nombre</string>
+
+    <string name="pnombre">nombre</string>
+    <string name="pfecha_nacimiento">fecha_nacimiento</string>
+    <string name="ptelefono">telefono</string>
+    <string name="pemail">email</string>
+    <string name="pdescripcion">descripcion</string>
+
+    <string name="Cfecha">Feha Nacimiento:</string>
+    <string name="Ctel">Tel.</string>
+    <string name="Cemail">Email:</string>
+    <string name="Cdescripcion">Descripción:</string>
+
+    <string name="enombre">nombre</string>
+
+
+</resources>
